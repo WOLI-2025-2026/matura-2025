@@ -48,5 +48,13 @@ np. dla zadnia 2.1
 
 `Zadanie2_1()`
 
+Program powinien realizować zadania w taki sposób aby funkcja wypisywała ten sam stumień wyjściowy do pliku wynikowego, jak równiez na ekran konsoli (standardowy strumień wyjściowy)
+
+np. dla zadnaia 2.1
+
+```
+cout << result ;
+wynik << result; //wynik jest ofstream do pliku wynik2_1
+```
 
 
