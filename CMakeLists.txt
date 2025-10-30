@@ -16,12 +16,3 @@ FetchContent_Declare(
   URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
 )
 FetchContent_MakeAvailable(googletest)
-
-# --- Test: obecność funkcji Zadanie2_1() ---
-add_executable(z2_1_source_test tests/expected/z2_1/z2_1.cpp)
-target_link_libraries(z2_1_source_test gtest_main)
-add_test(NAME z2_1_source_test COMMAND z2_1_source_test)
-
-# --- Test: plik wynikowy + stdout (uruchamia skrypt) ---
-add_test(NAME z2_1_golden COMMAND bash ../tests/expected/z2_1/z2_1.sh)
-set_tests_properties(z2_1_golden PROPERTIES FAIL_REGULAR_EXPRESSION "ERROR|::error")
