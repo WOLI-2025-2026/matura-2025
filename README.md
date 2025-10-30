@@ -1,38 +1,44 @@
 # matura-2025 — start
 
-Repo do ćwiczeń C++ i materiałów pod maturę 2025. Gotowe do uruchomienia w **GitHub Codespaces** (VS Code w przeglądarce).
+## 📁 Struktura repozytorium
 
-## Start (uczeń)
-1. Kliknij **Code → Create codespace on main**.
-2. Po otwarciu środowiska:
-   ```bash
-   cmake -S . -B build
-   cmake --build build
-   ./build/app
-   ctest --test-dir build
-   ```
-
-## Struktura
 ```
-.devcontainer/         # konfiguracja Codespaces
-.github/workflows/     # CI (budowanie + testy)
-results/               # folder z plikami wynikowymi
-src/                   # kod źródłowy
-tests/                 # testy jednostkowe (GoogleTest) - folder readonly
-CMakeLists.txt         # projekt CMake
-zalaczniki-{rok}       # załączniki do zadań maturalnych
-arkusz-{rok}.pdf       # arkusz maturalny
+.
+├── src/
+│   └── main.cpp                # główny plik źródłowy — tu realizujesz kolejne zadania
+│
+├── zalaczniki-2025/            # pliki tekstowe z danymi do zadań maturalnych
+│
+├── arkusz-2025.pdf             # pełny arkusz egzaminacyjny zadań maturalnych
+├── odpowiedzi-2025.pdf         # klucz odpowiedzi lub przykładowe rozwiązania
+├── CMakeLists.txt              # konfiguracja projektu CMake (budowanie, testy)
+├── .gitignore                  # wykluczenia plików przy commitowaniu
+└── README.md                   # ten plik — opis projektu
 ```
 
-## Wskazówki
-- Kompilator: C++17
-- Debugowanie: zakładka *Run and Debug* w Codespaces (GDB).
-- PR-y: twórz branch per zadanie; CI sprawdza budowę i testy.
+---
 
-> Jeśli korzystasz z GitHub Classroom, ustaw to repo jako **template** i twórz zadania z tego szablonu.
+## 🧭 Opis
+
+Repozytorium zawiera komplet materiałów i danych do zadań maturalnych z informatyki (rok 2025).
+Celem jest implementacja kolejnych zadań w języku **C++** w pliku `src/main.cpp`.
+
+---
+
+## ⚙️ Jak uruchomić
+
+W środowisku Codespaces lub lokalnie:
+
+```bash
+cmake -S . -B build
+cmake --build build
+./build/app
+```
+
+Program odczytuje pliki z folderu `zalaczniki-2025`, więc struktura katalogów musi pozostać niezmieniona.
 
 ## Warunki oceniania
-Ze zględu na działanie testów automatycznych, pliki wynikowe z zadań powinny być zapisywane w osobnych plikach w folderze zgodnie z następującym aliasem 
+Wyniki poszczegolnych zadan powinny byc zapisywane w nastepujacych plikach:
 
 `wynik{numer-zadania}_{numer-podzadania}.txt`
 
