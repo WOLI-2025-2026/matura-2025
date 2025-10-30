@@ -38,6 +38,8 @@ cmake --build build
 Program odczytuje pliki z folderu `zalaczniki-2025`, więc struktura katalogów musi pozostać niezmieniona.
 
 ## Warunki oceniania
+Plik main c++ zacznij od zakomentowanego imienia i nazwiska!
+
 Wyniki poszczegolnych zadan powinny byc zapisywane w nastepujacych plikach:
 
 `wynik{numer-zadania}_{numer-podzadania}.txt`
