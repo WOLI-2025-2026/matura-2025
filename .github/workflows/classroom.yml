@@ -1,0 +1,13 @@
+name: Autograding
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Uruchom autograding
+        uses: education/autograding@v1
