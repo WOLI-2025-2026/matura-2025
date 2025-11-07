@@ -31,14 +31,14 @@
       "points": 20
     },
     {
-      "name": "Sprawdź wynik3_2a.txt",
-      "run": "bash tests/compare_files.sh wynik3_2a.txt",
+      "name": "Sprawdź wynik3_2_a.txt",
+      "run": "bash tests/compare_files.sh wynik3_2_a.txt",
       "timeout": 10,
       "points": 20
     },
     {
-      "name": "Sprawdź wynik3_2b.txt",
-      "run": "bash tests/compare_files.sh wynik3_2b.txt",
+      "name": "Sprawdź wynik3__2b.txt",
+      "run": "bash tests/compare_files.sh wynik3_2_b.txt",
       "timeout": 10,
       "points": 20
     }
