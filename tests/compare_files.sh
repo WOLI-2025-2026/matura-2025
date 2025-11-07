@@ -8,6 +8,8 @@ fi
 
 FILE="$1"
 
+echo "$(pwd)"
+
 # katalog skryptu: tests/
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
