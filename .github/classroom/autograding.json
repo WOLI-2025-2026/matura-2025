@@ -9,7 +9,7 @@
     {
       "name": "Sprawdź wynik2_2.txt",
       "run": "bash tests/compare_files.sh wynik2_2.txt",
-      "timeout": 10
+      "timeout": 10,
       "points": 40
     },
     {
